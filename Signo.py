@@ -8,22 +8,22 @@
 #Si el numero es igual a cero, entonces el numero no tiene signo, porque
 #el cero no tiene signo.
 def signo ():
-    numeros = int(input("Indique la cantidad de nÃºmeros a probar "))
+    numeros = int(input("Indique la cantidad de numeros a probar "))
     contador = 1
-    while contador <= numeros:
-        prueba = eval(input("Escriba un nÃºmero de prueba "))
+    while contador != numeros:
+        prueba = eval(input("Escriba un numero de prueba "))
         if prueba > 0:
-            print ("El nÃºmero es positivo\n")
+            print("El numero es positivo\n")
         elif prueba < 0:
-            print("El nÃºmero es negativo\n")
+            print("El numero es negativo\n")
         elif prueba == 0:
             print ("El cero no tiene signo")
         else:
-            ("NÃºmero invÃ¡lido")
+            print("numero invalido")
         contador = contador + 1
 signo()
 def signo2 (numeros):
-    prueba = int(input("Escriba un nÃºmero de prueba "))
+    prueba = int(input("Escriba un numero de prueba "))
     if numeros == 0:
         return 0
     elif prueba == 0:
@@ -36,9 +36,9 @@ def signo2 (numeros):
         print ("El numero es negativo\n")
         return signo2 (numeros-1)
     else:
-        print ("NÃºmero invÃ¡lido")
+        print ("numero invalido")
         return signo2 (numeros-1)
-numeros = int(input("Indique la cantidad de nÃºmeros a probar"))
+numeros = int(input("Indique la cantidad de numeros a probar"))
 signo2(numeros)
 
 #Punto B
@@ -56,4 +56,4 @@ def MCD(num1,num2):
 num1 = int(input("Introduce el primer numero: "))
 num2 = int(input("Introduce el segundo numero: "))
 
-print("El mÃ¡ximo comÃºn divisor de ", num1," y ", num2," es ", MCD(num1, num2))
+print("El maximo comun divisor de ", num1," y ", num2," es ", MCD(num1, num2))
