@@ -9,7 +9,7 @@
 #el cero no tiene signo.
 def signo ():
     numeros = int(input("Indique la cantidad de numeros a probar "))
-    contador = 1
+    contador = 0
     while contador != numeros:
         prueba = eval(input("Escriba un numero de prueba "))
         if prueba > 0:
